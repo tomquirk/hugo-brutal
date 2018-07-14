@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  font-weight: 400;
+
+  max-width: 740px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.post-title,
+.site-title {
+  font-size: 7rem;
+  line-height: 1.2;
+  letter-spacing: -3px;
+  font-weight: bold;
+}
+
+.site-title-small,
+.post-title-list {
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+}
+
+.site-title-small {
+  font-weight: bold;
+}
+
+.post-meta-list {
+  font-size: 1.2rem;
+}
+
+.post-header-list {
+  margin-bottom: 0.5rem;
+}
+
+.post-summary {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.post-list-view {
+  margin-bottom: 2rem;
+}
+
+.post-title:visited,
+.site-title:visited {
+  color: black;
+}
+
+address ul {
+  display: flex;
+}
+
+address ul li:not(:last-of-type):after {
+  content: "|"
+}
+
+pre, code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.8rem;
+}
+
+.footer {
+  padding: 3rem;
+  text-align: center;
+}
+
+.post-content >p:first-of-type:first-letter {
+  color: blue;
+  float: left;
+  font-family: Georgia;
+  font-size: 7.5rem;
+  line-height: 0.8em;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.header,
+.header-post-single {
+  border-bottom: 2px solid black;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+.header {
+  padding-top: 3rem;
+}
+
+address ul li,
+.post-meta {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 1rem;
+}
+
+address ul li {
+  margin-top: 2rem;
+  margin-right: 0.3rem;
+}
+
+.post-content p {
+  font-size: 2.1rem;
+  line-height: 1.53;
+  margin: 2rem 0;
+}
+
+blockquote {
+  margin: 2rem 1rem;
+  padding: 0 2rem;
+  border-left: 4px solid black;
+  font-style: italic;
+}
+
+/****** SYNTAX HIGHLIGHTING ******/
+.highlight {
+  margin: 1rem 2rem;
+}
+/* Background */ .chroma { background-color: #ffffff }
+/* Error */ .chroma .err {  }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+/* Keyword */ .chroma .k { color: #0000ff }
+/* KeywordConstant */ .chroma .kc { color: #0000ff }
+/* KeywordDeclaration */ .chroma .kd { color: #0000ff }
+/* KeywordNamespace */ .chroma .kn { color: #0000ff }
+/* KeywordPseudo */ .chroma .kp { color: #0000ff }
+/* KeywordReserved */ .chroma .kr { color: #0000ff }
+/* KeywordType */ .chroma .kt { color: #2b91af }
+/* NameClass */ .chroma .nc { color: #2b91af }
+/* LiteralString */ .chroma .s { color: #a31515 }
+/* LiteralStringAffix */ .chroma .sa { color: #a31515 }
+/* LiteralStringBacktick */ .chroma .sb { color: #a31515 }
+/* LiteralStringChar */ .chroma .sc { color: #a31515 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #a31515 }
+/* LiteralStringDoc */ .chroma .sd { color: #a31515 }
+/* LiteralStringDouble */ .chroma .s2 { color: #a31515 }
+/* LiteralStringEscape */ .chroma .se { color: #a31515 }
+/* LiteralStringHeredoc */ .chroma .sh { color: #a31515 }
+/* LiteralStringInterpol */ .chroma .si { color: #a31515 }
+/* LiteralStringOther */ .chroma .sx { color: #a31515 }
+/* LiteralStringRegex */ .chroma .sr { color: #a31515 }
+/* LiteralStringSingle */ .chroma .s1 { color: #a31515 }
+/* LiteralStringSymbol */ .chroma .ss { color: #a31515 }
+/* OperatorWord */ .chroma .ow { color: #0000ff }
+/* Comment */ .chroma .c { color: #008000 }
+/* CommentHashbang */ .chroma .ch { color: #008000 }
+/* CommentMultiline */ .chroma .cm { color: #008000 }
+/* CommentSingle */ .chroma .c1 { color: #008000 }
+/* CommentSpecial */ .chroma .cs { color: #008000 }
+/* CommentPreproc */ .chroma .cp { color: #0000ff }
+/* CommentPreprocFile */ .chroma .cpf { color: #0000ff }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericHeading */ .chroma .gh { font-weight: bold }
+/* GenericPrompt */ .chroma .gp { font-weight: bold }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { font-weight: bold }
+

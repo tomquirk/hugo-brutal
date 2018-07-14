@@ -1,0 +1,12 @@
+name = "brutal"
+license = "MIT"
+licenselink = "https://github.com/tomquirk/hugo-brutal/blob/master/LICENSE"
+description = "Brutalism-inspired Theme for Hugo"
+homepage = "https://github.com/tomquirk/hugo-brutal/"
+tags = ["Brutalist", "Brutalism", "Minimal", "Light", "White", "Blog"]
+features = ["Responsive", "One Column", "Blog"]
+min_version = "0.1"
+
+[author]
+  name = "tomquirk"
+  homepage = "http://github.com/tomquirk"

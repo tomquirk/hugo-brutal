@@ -1,0 +1,48 @@
+{{ partial "header.html" . }}
+
+{{ if not .IsHome }}
+<header class="list-header">
+  {{ if eq .Data.Singular "tag" }}<span>Tagged in</span>
+  <h1 class="list-title">{{ .Data.Term }}</h1>
+  {{ else }}
+  <h1 class="list-title">Posts</h1>
+  {{ end }}
+</header>
+{{ end }}
+
+{{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") (index .Site.Params "paginate" | default 10) }}
+
+<section>
+  {{ range $index, $page := $paginator.Pages }}
+  <article class="post-list-view">
+    <header class="post-header-list">
+      <h2 class="post-title-list"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <div class="post-meta-list">
+        <time datetime="{{ .Date.Format "2006-1-2" }}">{{ .Date.Format "2006.1.2" }}</time></p>
+      </div>
+    </header>
+
+    <p class="post-summary">
+      {{ .Summary | plainify | htmlUnescape }}…
+    </p>
+    {{ if .Truncated }}
+    {{ end }}
+  </article>
+  {{ end }}
+</section>
+
+{{ if gt $paginator.TotalPages 1 }}
+<footer class="list-footer">
+  <nav class="pagination">
+    {{ if $paginator.HasPrev }}
+    <a class="pagination-prev" href="{{ $paginator.Prev.URL }}">← Prev Page</a>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <a class="pagination-next" href="{{ $paginator.Next.URL }}">Next Page →</a>
+    {{ end }}
+  </nav>
+</footer>
+{{ end }}
+
+{{ partial "footer.html" . }}
+
