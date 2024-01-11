@@ -12,4 +12,4 @@ $ cd themes
 $ git clone https://github.com/tomquirk/hugo-brutal
 ```
 
-*For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.*
+*For more information read the official [quick start guide](https://gohugo.io/getting-started/quick-start/) of Hugo.*
